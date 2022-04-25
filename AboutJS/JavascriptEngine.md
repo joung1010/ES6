@@ -35,4 +35,13 @@ Javascript로 코딩을 하고 Javascript Engine도 이에맞게 구현이 되�
 가능하다.   
 [WIKI ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)   
 [버전별 문법 지원 현황 확인]( https://kangax.github.io/compat-table/es5/)
-   
+
+*** 
+## Javascript   
+자바스크립트는 가벼운 스크립팅 언어    
+인터프리터를 이용해서 런타임시  코드를 한줄 한줄씩 번역해서 실행하는 언어   
+일급함수를 가지고 있는 프로그래밍 언어   
+웹페이지 뿐만아니라 브라우저 , 외부환경 노드Js 등과 같이 JS Engine 이 있는 어느 곳이든 실행 가능   
+프로토타입 베이스 언어   
+싱글 쓰레드, 동적으로 타입이 결정 되는 언어 
+

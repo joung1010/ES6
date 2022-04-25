@@ -48,8 +48,8 @@ Javascript로 코딩을 하고 Javascript Engine도 이에맞게 구현이 되�
 ***
 Node Js 설치 후 nodemon 오류   
 > 문제점: ps1 파일을 로드할 수 없음 
-1. Windows PowerShell을 관리자 권한으로 실행
-2. get-help Set-ExecutionPolicy 입력
-3. Set-ExecutionPolicy RemoteSigned 입력
+>>1. Windows PowerShell을 관리자 권한으로 실행
+>>2. get-help Set-ExecutionPolicy 입력
+>>3. Set-ExecutionPolicy RemoteSigned 입력
 
 

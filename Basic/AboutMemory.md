@@ -24,7 +24,7 @@
 하드디스크에 저장에 두고 지금 실행중인 어플리케이션에 메모리를 할당하게된다.   
 만약 내가 가지고 있는 메모리보사이즈보다 어플리케이션이 더많은 메모리를 요구하면 오류가 발생한다.
 
-<img height="300px" src="C:\ES6\img\memory.jpg" width="450px"/>
+<img height="300px" src="..\img\memory.jpg" width="450px"/>
 
 *** 
 ##메모리 구성

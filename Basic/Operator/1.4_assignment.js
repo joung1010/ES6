@@ -1,0 +1,18 @@
+// 할당연산자 (Assignment Operations)
+
+let a = 1;
+a = a + 2;
+console.log(a);
+
+a += 2; // a = a + 2 ; 축약 버전
+console.log(a);
+
+a -= 2;
+console.log(a);
+
+a *= 2;
+console.log(a);
+
+a /= 2;
+a %= 2;
+a **=2;

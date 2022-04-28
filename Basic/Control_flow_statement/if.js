@@ -12,7 +12,7 @@ if (fruit === 'apple') {
     console.log('!!');
 }
 
-if (flase) {
+if (false) {
     console.log('출력하면 안됨')
 }
 // if 조건문이 false 가 되면 된다 -> false, 0 , null, undefined , ''

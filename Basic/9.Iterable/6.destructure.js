@@ -42,3 +42,28 @@ console.log(name);
 console.log(age);
 console.log(occupation);
 console.log(pet);
+
+
+// Quiz
+
+const prop = {
+
+    name: 'Button',
+
+    styles: {
+
+        size: 20,
+
+        color: 'black',
+
+    },
+
+};
+// 이중 구조 분해
+function changeColor({styles:{color}}) {
+
+    console.log(color);
+
+}
+
+changeColor(prop);

@@ -44,7 +44,20 @@ Ya ya YaYaYa Ya
 | `+`         | 하나 또는 많이 (one or more)        |
 | `{n}`       | n번 반복                            |
 | `{min,}`    | 최소                                |
-| `{min,max}` | 최소, 그리고 최대                   |
+| `{min,max}` | 최소, 그리고 최대                   |  
+  
+```
+예제 :Hi there, Nice to meet you. And Hello there and hi.
+I love grey(gray) color not a gry, graay and graaay.
+Ya ya YaYaYa Ya
+```
+```
+/gra?y/gm : 특정문자열 앞에? 는 ?뒤에 문자가 있거나 없거나를 의미 gray, gry
+/gra*y/gm : 특정문자열 앞에* 는 *뒤에 문자가 있거나 없거나, 많거나 를 의미 gray, gry, graay,graaay
+/gra+y/gm : 특정문자열 앞에+ 는 +뒤에 문자가 하나 있거나 혹은 그이상 있는 것을 의미 gray, graay, graaay
+/gra{2,3}y/gm : 특정문자열 앞에 {}로는 뒤에 문자가 n번반복{2}:graay, 최소{2,}반복 graay,graaay 최소최대{2,3}graay,graaay
+
+```
 
 ### Boundary-type
 

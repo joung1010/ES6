@@ -94,4 +94,22 @@ Ya ya YaYaYa Ya
 | `\w`      | word 문자                    |
 | `\W`      | word 문자 아님               |
 | `\s`      | space 공백                   |
-| `\S`      | space 공백 아님              |
+| `\S`      | space 공백 아님              |  
+  
+```
+예제 :Hi there, Nice to meet you. And Hello there and hi.
+I love grey(gray) color not a gry, graay and graaay.
+Ya ya YaYaYa Ya
+
+.[]{}()\^$|?*+
+```
+```
+/./gm :  모든문자열 선택
+/\.\[\]\{\}/gm : 진자 특정 특수문자를 찾고싶을때 \찾고싶은 특수문자  . [] {}
+/\d/gm : 모든 숫자
+/\D/gm : 숫자를 제외한 모든것
+/\w/gm : 모든 문자열
+/\W/gm : 문자열을 제외한 모든것
+/\s/gm :  공백
+/\S/gm :  공백을 제외한 모든것
+```

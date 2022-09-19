@@ -112,4 +112,14 @@ Ya ya YaYaYa Ya
 /\W/gm : 문자열을 제외한 모든것
 /\s/gm :  공백
 /\S/gm :  공백을 제외한 모든것
+```  
+```
+JS 에서 사용해보기
+const regex = /(?:http?s:[/]{2})?(?:www.)?youtu.be\/([a-zA-Z0-9-]{11,})/;
+const url = https://youtu.be/-ZClicWm0zM;
+url.match(regex);
+결과 ["https://youtu.be/-ZClicWm0zM","-ZClicWm0zM"]
+배열요소의 첫번째는 매칭되는 문자열 전체
+그다음요소는 group의 값이 할당된다.
+
 ```

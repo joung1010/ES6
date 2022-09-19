@@ -66,7 +66,22 @@ Ya ya YaYaYa Ya
 | `\b`      | 단어 경계        |
 | `\B`      | 단어 경계가 아님 |
 | `^`       | 문장의 시작      |
-| `$`       | 문장의 끝        |
+| `$`       | 문장의 끝        |  
+  
+```
+예제 :Hi there, Nice to meet you. And Hello there and hi.
+I love grey(gray) color not a gry, graay and graaay.
+Ya ya YaYaYa Ya
+```
+```
+/\bYa/gm: 특정한 문자열이 있을때 단어앞에서만 사용하는 문자열을 선택하고 싶을때 \b Ya(이부분) ya Ya(이부분)YaYa Ya(이부분)
+/Ya\b/gm: 특정한 문자열이 있을때 단어뒤에서만 사용하는 문자열을 선택하고 싶을때 \b Ya(이부분) ya YaYaYa(이부분) Ya(이부분)
+/Ya\B/gm: /b반대로 행동 단어 뒤에서만 사용하는 문자만 제외  Ya ya Ya(이부분)Ya(이부분)Ya Ya
+/^Ya/gm: 문장의 시작이 Ya로 시작하는것만 Ya(이부분) ya YaYaYa Ya
+/Ya$/gm: 문장의 끝이 Ya로 시작하는것만 Ya ya YaYaYa Ya(이부분)
+먄약 flag에서 m(multiline)을 빼면 가장 마지막에 Ya 선택됨
+
+```
 
 ### Character classes
 

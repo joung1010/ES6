@@ -13,7 +13,27 @@
 | `()`      | 그룹                                   |
 | `[]`      | 문자셋, 괄호안의 어떤 문자든           |
 | `[^]`     | 부정 문자셋, 괄호안의 어떤 문가 아닐때 |
-| `(?:)`    | 찾지만 기억하지는 않음                 |
+| `(?:)`    | 찾지만 기억하지는 않음                 |  
+  
+```
+예제 :Hi there, Nice to meet you. And Hello there and hi.
+I love grey(gray) color not a gry, graay and graaay.
+Ya ya YaYaYa Ya
+```
+```
+/Hi|Hello/gm : 위의 예제에서 Hi와 Hello가 찾아짐
+/(Hi|Hello)/gm : 위의 예제에서 Hi와 Hello가 찾아지는데 gruop1 : # Hi, gruop1 : # Hello 
+/(Hi|Hello)/gm : 위의 예제에서 Hi와 Hello가 찾아지는데 gruop1 : # Hi, gruop1 : # Hello 
+/(Hi|Hello)|(And)/gm : {gruop 1: Hi,gruop 2 : undefined},{gruop 1: Hello,gruop 2 : undefined},
+{gruop 1: undefined,gruop 2 : And} 이런 형로 해당 ()그룹에 맞는 곳에 그 값이 match된다.
+
+/gr(?:a|e)y/gm : gray, grey가 match되는데 이때 따로 group이라는 데이터를 만들고싶지 않을때 ?:사용
+/(gr[aed]y/gm  : gray,grey,grdy (a|e|d) 이런형식으로 그룹으로 묶어도 되지만 []안에 문자열집합체를 입력해주면
+해당 [] 안에 있는 문자열을 하나라도 만족하는 것을 찾을때 사용
+/(gr[a-f]y/gm : [a-f] a에서 f 까지 : a,b,c,d,e,f
+[a-zA-z0-9] : a~z까지 A~Z까지 0~9까지
+/[^a-zA-z0-9]/gm : a~z까지 A~Z까지 0~9까지를 제외한 것을 찾음 : , . 공백
+```
 
 ### Quantifiers
 
